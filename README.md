@@ -4,7 +4,7 @@ This is the accompanying repository to ICANN 2019 publication: Timage - A Robust
 
 For maximum robustness and ease of use timage uses very little configuration.
 To achieve this timage regards every time series as equal and transforms the time series to recurrence plots.
-These plots are than used to train a deep Residual Network [ResNet](https://arxiv.org/abs/1512.03385). Same goes for inference.
+These plots are then used to train a deep Residual Network [ResNet](https://arxiv.org/abs/1512.03385). Same goes for inference.
 This very simple, yet effective method works well for many different problems.
 
 ## Structure of this repository:
@@ -35,12 +35,12 @@ Please cite this work as:
 ```
 ## Recurrence plots/ threshholded recurrence plots
 In essence Reccurrence plots are a N-dim to 2-dim subspace mapping. 
-This mapping is done by computing the point wise distances between all samples of the time series.
+This mapping is done by computing the point wise distances between all samples of a time series.
 This always leads to a symetric matrix that can be plottet.
-The formula describing this plots then applies a Heavside function that requries Epsilon threshhold value.
+The formula describing this plots then applies a Heavside function that requries an Epsilon threshhold value.
 <img src="figures/recurrenceplot.png" height=50>
 
-We did not want to tune this hyper parameter so we plottet the pointwise distances after min max scaling.
+We did not want to tune this hyper parameter so we plottet the pointwise distances after min-max scaling.
 As an easy step to handle outliers we cut of distances larger than three times the standard deviation of all computed distances in the training set.
 
 <img src="figures/unthresholded.png" with="300">\

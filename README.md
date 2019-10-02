@@ -2,6 +2,8 @@
 
 This is the accompanying repository to ICANN 2019 publication: Timage - A Robust Time Series Classification Pipeline.
 
+A reprint of the paper can be found at [arXiv](https://arxiv.org/abs/1909.09149)
+
 For maximum robustness and ease of use timage uses very little configuration.
 To achieve this timage regards every time series as equal and transforms the time series to recurrence plots.
 These plots are then used to train a deep Residual Network [ResNet](https://arxiv.org/abs/1512.03385). Same goes for inference.

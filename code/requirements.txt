@@ -13,7 +13,7 @@
 keras
 matplotlib
 sklearn
-tensorflow==1.12.3
+tensorflow==2.5.0
 -e git://github.com/walwe/ucrloader.git#egg=ucrloader
 click
 joblib
